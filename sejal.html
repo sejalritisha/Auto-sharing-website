@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-image: url('https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_956,h_956/v1684887108/assets/76/baf1ea-385a-408c-846b-59211086196c/original/u4b-square.png');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .partner-radio {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .partner-radio input {
+            margin: 5px 0;
+        }
+
+        /* .partner-content */
+        .btn
+         {
+            margin-top: 20px;
+        }
+    </style>
+    <title>Riding Partner and Fare</title>
+</head>
+<body>
+<form id="form>">
+    <div class="container">
+     <a href="ttt2.html">want to choose your riding partner</button>
+        <div class="partner-radio">
+            <input type="radio" id="sejal" name="partner" value="soni" onclick="loadPartnerContent('soni')">
+            <button onclick="calculateRoute('vasant kunj')">Soni</button>
+
+            <input type="radio" id="soni" name="partner" value="soni" onclick="loadPartnerContent('soni')">
+            <button onclick="calculateRoute('hauz khas')">Soni</button>
+
+            <input type="radio" id="shikha" name="partner" value="shikha" onclick="loadPartnerContent('shikha')">
+            <button onclick="calculateRoute('aiims')">Soni</button>
+            <button>done</button>
+        </div>
+        
+        <div class="partner-content" id="sejal-content"></div>
+        <div class="partner-content" id="soni-content"></div>
+        <div class="partner-content" id="shikha-content"></div>
+        </div>
+
+    <script>
+        function loadPartnerContent(partner) {
+            // Clear all partner content
+          var container= document.getElementById('sejal-content').innerHTML = '';
+           var  container=document.getElementById('soni-content').innerHTML = '';
+             var container=document.getElementById('shikha-content').innerHTML = '';
+             container.innerHTML='';
+            // Use a switch statement to load content into the corresponding div
+            switch (partner) {
+                case 'sejal':
+                    document.getElementById('sejal-content').innerHTML = '<h2>Welcome to Sejal\'s page</h2><p>Content specific to Sejal</p>';
+                // content='<h2>Welcome to Sejal\'s page</h2><p>content specific</p>';
+                    break;
+                case 'soni':
+                   
+                document.getElementById('soni-content').innerHTML = '<h2>Welcome to Soni\'s page</h2><p>Content specific to Soni</p>';
+                // content='<h2>Welcome to Soni\'s page</h2><p>content specific</p>';  
+                break;
+                case 'shikha':
+                // content='<h2>Welcome to Shikha\'s page</h2><p>content specific</p>';
+                document.getElementById('shikha-content').innerHTML = '<h2>Welcome to Shikha\'s page</h2><p>Content specific to Shikha</p>';
+                    break;
+                default:
+                    // No partner selected
+            }
+           
+        
+        }
+        
+    </script>
+    <script src="tt2.js"></script>
+
+
+</body>
+</html>

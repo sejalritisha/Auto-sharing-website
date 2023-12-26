@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="google-signin-client_id" content="780597137714-d9gcbgcg5eejnct2s6641a0ccre61grr.apps.googleusercontent.com">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="login.css"></link>
+</head>
+<style>
+       label {
+            font-size: 16px; /* Change the font size */
+            font-family: 'Arial', sans-serif; /* Change the font family */
+            display: block;
+            margin-bottom: 5px;
+        }
+        input {
+            display: block; /* Make the input a block element */
+            margin-bottom: 10px; /* Add space below the input */
+        }
+</style>
+<body>
+    <iframe src="nav.html" frameborder="0" width="100%" height="50"></iframe>>
+    <div class="main">
+    <div class="heading"><h1>What's your phone number or email</h1></div>
+    
+    <div  class="items" ><input class=" inp" placeholder="Enter phone number or email"></div>
+    <div class="items"><button class=" inp" style="background-color: black; color: aliceblue;"><a style="color: aliceblue; text-decoration: none;" href="home.html">Continue</a></button></div>
+    <div class="items" style="margin-left: 300px;"><p >or</p></div>
+    <div class="items"style="margin-left: 250px; margin-top:1px;" ><div class=" g-signin2" data-onsuccess="onSignIn"></div></div>
+    <!-- <button type="button" onclick="signOut();">Sign out</button> -->
+    <p>By proceeding, you consent to get calls, WhatsApp or SMS messages, including by automated means, <br>from Uber and its affiliates to the number provided.
+
+        This site is protected by reCAPTCHA and the<br> Google Privacy Policy and Terms of Service apply.</p>
+</div>
+    <script src="login.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    
+</body>
+</html>

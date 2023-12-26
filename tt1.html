@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="map.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.css" />
+    <title>Leaflet Map with Routing</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        
+    </style>
+</head>
+<body>
+    <iframe src="nav.html" frameborder="0" width="100%" height="50"></iframe>
+<div class="box1"> 
+    <div class="part1">
+        <div class="cont">
+        <label for="sourceBox">Source Location: </label>
+        <input type="text" id="sourceBox" />
+        <br>
+        <br>
+        <label for="destinationBox">Destination Location: </label>
+        <input type="text" id="destinationBox" />
+        <br>
+        <br>
+        <div class="button1">
+        <button class="butt" onclick="calculateRoute1();storeUserInput();">confirm</button>
+        
+        <button class="butt"><a href="ttt2.html">share</a></button>
+    </div>
+
+        <!-- <button onclick="bookAuto()">book</button>
+        <div id="output"></div> -->
+     </div>
+    </div>
+
+    <div id="map">my map</div>
+</div>
+   
+   
+</body>
+</html>
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
+<script src="tt3.js"></script>
+

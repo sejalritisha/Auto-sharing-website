@@ -1,0 +1,287 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins',sans-serif;
+
+}
+nav{
+    display:flex;
+    width: 100%;
+    height: 2%;
+    justify-content: center;
+    justify-content: space-between;
+    background-color: black;
+    color:aliceblue;
+
+}
+nav .right{
+    display:flex;
+     /* margin-top:11px;
+     margin-bottom: 10px; */
+     padding-bottom: 80px;
+}
+nav .left{
+    display:flex;
+    
+}
+.left img{
+    margin-top:-11px;
+    width:33%;
+
+}
+.left p{
+    margin-inline:22px;
+    margin-top:21px;
+
+}
+.right p{
+    margin-inline:22px;
+    margin-top:21px;
+}
+.right i{
+    margin-top:22px;
+    font-size:22px;
+}
+.right button{
+    width:100px;
+    height:36px;
+    background-color: azure;
+    color:black;
+    font-weight:600;
+    border:none;
+    border-radius: 22px;
+    margin-top: 12px;
+
+}
+.right button :hover{
+    background-color: transparent;
+    color:beige;
+    border:2px solid white;
+}
+input::placeholder {
+    color: #111010; /* Set your desired color */
+  }
+.bg1{
+    background-image: url(https://blog.uber-cdn.com/cdn-cgi/image/width=2160,quality=80,onerror=redirect,format=auto/wp-content/uploads/2023/02/Uber-X-Share02-1024x351.png);
+    background-repeat: no-repeat;
+    background-size: 1500px;
+    height:800px;
+    align-items: center;
+    width: 100%;
+}
+.card{
+    
+   padding-top: 60px;
+
+}
+.main{
+    width:400px;
+    height:400px;
+    margin-left:44px;
+     
+    background-color: #faf4f4;
+
+}
+.main .icon{
+    display: flex;
+    justify-content:center;
+
+}
+.icon{
+    margin-inline: 64px;
+    margin-top:50px;
+    border-bottom: 3px solid black;
+
+}
+.main .icon .car{
+    margin-inline: 64px;
+    margin-top:11px;
+   border-bottom: 3px solid black;
+
+
+}
+.icon .car i{
+    font-size:113%;
+
+}
+.card h1{
+   padding:33px;
+   font-size:33px;
+}
+.card input{
+    width:300px;
+    height:40px;
+    border:none;
+    padding:8px;
+    margin-top: 9px;
+    margin-left:33px;
+    background-color:grey;
+}
+.card .btn {
+    margin-left:33px;
+    margin-top:44px;
+
+}
+.card .btn fr{
+ width:140px;
+ height:36px;
+ background-color:black;
+ color: white;
+ border:none;
+ border-radius: 4px;
+ margin:18px;
+ padding:18px;
+ justify-content: space-evenly ;
+}
+
+ 
+.card .btn button{
+    width:140px;
+    height:36px;
+    background-color:black;
+    color: white;
+    border:none;
+    border-radius: 4px;
+    margin-inline:18px;
+   }
+   .head h1{
+       padding:33px;
+       font-size:43px;
+       justify-content: center;
+
+   }
+   .ride .comride{
+    display:flex;
+    justify-content: center;
+    justify-content: space-between;
+   } 
+   .comride auto{
+         display:flex;
+         
+   }
+   .comride .auto img{
+    margin-inline: 33px;
+    width:43%;
+   }
+   .safe{
+    display:flex;
+    justify-content: center;
+    justify-content: space-around;
+    margin-top:33px;
+
+   }
+   .app{
+    background-color: rgb(210,209,209);
+
+   }
+   .app h1{
+    padding:35px;
+    font-size:44px;
+
+   }
+   .app .down{
+            display: flex;
+            justify-content:center ;
+            justify-content:space-around ;
+            padding:55px;
+
+   }
+.footer{
+    display:flex;
+    justify-content: center;
+    justify-content: space-around;
+    background-color: black;
+    color: aliceblue;
+    padding:44px;
+    margin-top:22px;
+}
+/* tt1 style */
+#map {
+    width: 100%;
+    height: 100vh;
+     }
+.box1 {
+     display: flex;
+     font-size: 20px;
+     }
+.part1 {
+    margin: 50px 30px;
+     height: 100%;
+     width: 750px;
+
+     }
+.butt {
+    height: 30px;
+    width: 100px;
+    font-size: 20px;
+    color: #fff;
+    background-color: rgb(18, 18, 17);
+
+}
+.button1
+{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+.cont{ 
+    border: solid;
+    color: black;
+    padding: 50px;
+    margin-top: 20px;
+    height: 400px;
+}
+.partner
+{
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+}
+/* html ttt2 style */
+#ttt2{
+    padding: 8px;
+    height: 100%;
+    
+}
+.butt2{
+    height: 30px;
+    width: 100px;
+    font-size: 15px;
+    color: #121010;
+    background-color:#9b59b6;;
+    border: none;
+}
+.butt2.clicked{
+     background-color: rgb(0, 0, 255,0.2);
+}
+#info{
+    height: 550px; 
+    padding: 10px;
+     
+}
+P{
+    font-size:10px ;
+}
+.auto{
+    /* width: 50px; */
+    padding-left: 200px;
+    padding-top: 50px;
+}
+#autodis
+{
+    margin-top: 40px;
+}
+#displayArea1
+{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+}
+#displayArea2
+{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+}

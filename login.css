@@ -1,0 +1,42 @@
+.main
+{
+    /* padding-left: 500px; */
+    /* display: flex; /* Make the container a flex container */
+    /* flex-wrap: wrap; */ 
+    height: 100px;
+    margin-left: 500px;
+}
+.items
+{
+    /* margin-top: 200px;
+    margin-bottom: 100px;
+    margin-right: 300px;
+    padding-right: 200px; */
+    height: 100px;
+    margin-top: 5px;
+    margin-left: 170px;
+}
+.heading
+{
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    display: block; /* Make the label a block element */
+    margin-top: 100px;
+    
+}
+.inp
+{ margin-bottom: 10px;
+    /* border: 20px; */
+    border-color: black;
+    border-radius: 10px;
+    width: 300px; /* Make the input take up the full width */
+    box-sizing: border-box; /* Include padding and border in the width */
+    padding: 8px; /* Add padding for better appearance */
+    margin-bottom: 10px; 
+    height: 60px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+font-size: 15px;
+
+    display: block; /* Make the input a block element */
+    margin-bottom: 10px; /* Add space below the input */
+}

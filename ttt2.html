@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.css" />
+    <title>Leaflet Map with Routing</title>
+    <link rel="stylesheet" href="map.css">
+     <style>
+        #map{
+            margin-top: 90px;
+            width: 100%;
+            height: 100vh;
+        }
+     </style>
+    
+</head>
+<body>
+    <div class="box1">
+    <div class="part1"  >
+        
+    <h2>Ride now</h2>
+    <div class="cont" id="info">
+        
+    <p id="displayArea1"></p>
+    <br>
+    <p id="displayArea2"></p>
+    <br><br>
+
+<h5>Choose your riding partner</h5>
+<br>
+<div class="partner">
+    <button class="butt2" onclick="calculateRoute('aiims delhi');changeColor(this); " id="change">Soni</button>
+     <p>AIIMS DELHI</p>
+           
+    <button  class="butt2"  onclick="calculateRoute('vikaspuri');changeColor(this);" id="change">Sejal</button>
+        <P>VIKASPURI</P>
+    
+    <button class="butt2"  onclick="calculateRoute('shankar vihar');changeColor(this);" id="change">Shikha</button>
+    <p>SHANKER VIHAR</p>
+</div>
+    <br><br>
+    <div id="output"></div>
+    <br>
+    <button class="butt2"  onclick="calDist()">More info</button>
+    <br><br>
+    <div id="dist"></div>
+    <br>
+    <div id="time"></div>
+    <br>
+    <div id="tfare"></div>
+    <br>
+    <div id="fare"></div>
+    <br>
+     <button class="butt2">Book</button>
+     <button class="butt"><A href="card.html">pay now</A></button>
+    </div>
+    <!-- <button onclick="calculateRoute()">ok</button> -->
+  </div>
+    <div id="map"></div>
+</div>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
+
+    <script>
+        // Check if local storage is supported
+    if (typeof(Storage) !== "undefined") {
+    // Retrieve user input from local storage
+    var storedUserInput1 = localStorage.getItem('userInput1');
+    var storedUserInput2 = localStorage.getItem('userInput2');
+
+
+    // Display the stored information
+    if (storedUserInput1) {
+        document.getElementById('displayArea1').innerText = 'Your source: ' + storedUserInput1;
+        
+    } else {
+        document.getElementById('displayArea1').innerText = 'No user input found.';
+    }
+    if (storedUserInput2) {
+        document.getElementById('displayArea2').innerText = 'Your destination: ' + storedUserInput2;
+        
+    } else {
+        document.getElementById('displayArea2').innerText = 'No user input found.';
+    }
+} else {
+    alert('Sorry, your browser does not support local storage.');
+}
+</script>
+<script>
+    function changeColor(button) {
+        button.classList.toggle("clicked");
+    }
+</script>
+<script>
+    // Get the button element by its ID
+    var button = document.getElementById('change');
+  
+    // Add a click event listener
+    button.addEventListener('click', function() {
+      // Change the button color on click
+      button.style.backgroundColor = '#008080'; // You can use any color here
+    });
+  </script>
+  
+
+<script src="tt2.js"></script>
+</body>
+</html>
